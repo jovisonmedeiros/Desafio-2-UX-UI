@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membros Online - Introdução a UX/UI Design</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <header class="hero-header" style="padding-bottom: 40px;">
+            <div class="top-nav">
+                <a href="index.html">← Voltar ao Hub</a>
+                <a href="#">Minhas Disciplinas</a>
+                <a href="#">Sair</a>
+            </div>
+
+            <div class="main-profile-box">
+                <div class="hero-title">
+                    <h1><span class="number">👥</span> Membros da Disciplina</h1>
+                    <p style="font-size: 1em;">**Introdução a UX/UI Design** | 32 alunos ativos | 5 online agora</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            
+            <div class="col-left" style="grid-column: span 2; display: flex; flex-direction: column; gap: 30px;">
+                
+                <section class="section-card" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2 class="section-title" style="margin: 0;"><span class="number">🔍</span> Filtros</h2>
+                    <div style="display: flex; gap: 15px;">
+                        <input type="text" placeholder="Buscar por nome ou matrícula..." style="padding: 8px; border: 1px solid var(--border-color); border-radius: 4px; width: 300px;">
+                        <select style="padding: 8px; border: 1px solid var(--border-color); border-radius: 4px;">
+                            <option>Status: Online</option>
+                            <option>Status: Todos</option>
+                            <option>Tipo: Professor</option>
+                            <option>Tipo: Aluno</option>
+                        </select>
+                        <button class="cta-button">Aplicar</button>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <h2 class="section-title"><span class="number">5</span> Online Agora</h2>
+
+                    <div class="members-grid">
+                        
+                        <div class="member-card you">
+                            <img src="https://i.pravatar.cc/150?img=68" class="member-avatar">
+                            <h3>João (Você)</h3>
+                            <p class="member-role">Aluno (Online)</p>
+                            <button class="cta-button" style="background-color: #555;">Ver Perfil</button>
+                        </div>
+                        
+                        <div class="member-card official">
+                            <img src="https://i.pravatar.cc/150?img=12" class="member-avatar">
+                            <h3>Prof. Ana</h3>
+                            <p class="member-role">Professor(a) (Online)</p>
+                            <button class="cta-button" style="background-color: var(--primary-color);">Enviar Mensagem</button>
+                        </div>
+
+                        <div class="member-card online">
+                            <img src="https://i.pravatar.cc/150?img=35" class="member-avatar">
+                            <h3>Maria S.</h3>
+                            <p class="member-role">Aluno (Online)</p>
+                            <button class="cta-button">Enviar Mensagem</button>
+                        </div>
+                        
+                        <div class="member-card online">
+                            <img src="https://i.pravatar.cc/150?img=49" class="member-avatar">
+                            <h3>Pedro A.</h3>
+                            <p class="member-role">Aluno (Online)</p>
+                            <button class="cta-button">Enviar Mensagem</button>
+                        </div>
+                        
+                        <div class="member-card offline">
+                            <img src="https://i.pravatar.cc/150?img=21" class="member-avatar">
+                            <h3>Lúcia F.</h3>
+                            <p class="member-role">Aluno (Ausente)</p>
+                            <button class="cta-button" style="background-color: #aaa;">Ver Perfil</button>
+                        </div>
+                        
+                        <div class="member-card offline">
+                            <img src="https://i.pravatar.cc/150?img=55" class="member-avatar">
+                            <h3>Carlos R.</h3>
+                            <p class="member-role">Aluno (Offline)</p>
+                            <button class="cta-button" style="background-color: #aaa;">Ver Perfil</button>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

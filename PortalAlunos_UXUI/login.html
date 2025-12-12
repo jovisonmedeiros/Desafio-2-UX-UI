@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Portal do Aluno</title>
+    <link rel="stylesheet" href="./css/login-style.css"> 
+</head>
+<body>
+
+    <header class="header-login">
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>PORTAL DO ALUNO</h1>
+            </div>
+            <img src="https://img.logoipsum.com/264.svg" alt="Logo Educa Brasil" style="height:50px; filter: invert(1) brightness(200%);">
+        </div>
+    </header>
+
+    <div class="main-banner"></div>
+
+    <div class="login-container">
+
+        <div class="login-box">
+            <h2>Acesso ao Portal</h2>
+            
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Seu CPF (apenas números)" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+            
+            <div class="login-actions">
+                <a href="#" class="forgot-password">Recuperar senha</a>
+                <button type="button" id="loginButton" class="login-button" onclick="redirectToPortal()">Entrar</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2>Seja bem-vindo ao Portal do Aluno</h2>
+            <p>Conecte-se com seus colegas e professores através do novo **Hub de Colaboração**!</p>
+            <p>Aproveite os novos fóruns de discussão, o chat em tempo real e a biblioteca colaborativa para enriquecer sua jornada acadêmica.</p>
+            <img src="http://googleusercontent.com/image_collection/image_retrieval/7202929880037105643_0" alt="Imagem Promocional" style="width: 100%; margin-top: 20px; border-radius: 4px;">
+        </div>
+        
+    </div>
+
+    <script>
+        function redirectToPortal() {
+            window.location.href = 'index.html'; 
+        }
+    </script>
+
+</body>
+</html>

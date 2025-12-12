@@ -1,0 +1,209 @@
+/* =========================================
+   CHAT-STYLE.CSS - TELA DE CHAT
+   ========================================= */
+
+/* O chat assume a cor e fonte definidas em style.css */
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-page);
+}
+
+/* 1. CABEÇALHO DO CHAT */
+.chat-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header h1 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.back-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.2s;
+}
+
+.online-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* 2. CONTAINER PRINCIPAL (SIDEBAR + MAIN) */
+.chat-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* 3. SIDEBAR (LISTA DE USUÁRIOS) */
+.chat-sidebar {
+    width: 280px;
+    background-color: var(--card-background);
+    border-right: 1px solid var(--border-color);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.chat-sidebar h2 {
+    color: var(--primary-color);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.room-list {
+    list-style: none;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.room-list li {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.room-list li:hover {
+    background-color: var(--background-page);
+}
+
+.active-room {
+    background-color: var(--background-page);
+    font-weight: bold;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.user-list h3 {
+    font-size: 1em;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.online-user {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 0.9em;
+}
+
+.chat-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* 4. ÁREA PRINCIPAL DE MENSAGENS */
+.chat-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcfc;
+}
+
+.messages-area {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Estilo da Mensagem */
+.message {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.message-content {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    line-height: 1.4;
+    position: relative;
+}
+
+.message-sender {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: var(--primary-color);
+}
+
+.message-time {
+    display: block;
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: 5px;
+    color: #999;
+}
+
+/* Mensagens Recebidas (Colegas/Professor) */
+.message.received {
+    justify-content: flex-start;
+}
+
+.message.received .message-content {
+    background-color: var(--background-page);
+    border-top-left-radius: 0;
+}
+
+.message.received.official .message-content {
+    border: 1px solid var(--secondary-color);
+}
+
+/* Mensagens Enviadas (Você) */
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.sent .message-content {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-top-right-radius: 0;
+}
+
+.message.sent .message-sender, 
+.message.sent .message-time {
+    display: none; /* O remetente é você, não precisa mostrar */
+}
+
+
+/* 5. ÁREA DE INPUT */
+.input-area {
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    background-color: var(--card-background);
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.send-button {
+    padding: 8px 25px;
+    border-radius: 20px;
+}

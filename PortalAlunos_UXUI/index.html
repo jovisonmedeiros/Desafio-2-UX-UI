@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Hub de Colaboração</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <header class="hero-header">
+            <div class="top-nav">
+                <a href="#">Minhas Disciplinas</a>
+                <a href="#">Perfil</a>
+                <a href="login.html">Sair</a>
+            </div>
+
+            <div class="main-profile-box">
+                <div class="profile-photo-lg"></div>
+                <div class="hero-title">
+                    <h1><span class="number">⭐</span> Bem-vindo, João!</h1>
+                    <p>Portal de Acesso Rápido à Disciplina: <a href="course-view.html" style="color: var(--secondary-color); text-decoration: none; font-weight: bold;">**Introdução a UX/UI Design**</a></p>
+                </div>
+            </div>
+            
+            <div class="header-info-boxes">
+                <div class="info-card">
+                    <h3>Próxima Atividade</h3>
+                    <p>Avaliação Módulo 3: Prototipação.</p>
+                    <p style="font-size: 0.9em; color: var(--text-muted);">Entrega em: 18/Dez</p>
+                </div>
+                <div class="info-card">
+                    <h3>Chat Ativo</h3>
+                    <p>5 colegas online nesta disciplina.</p>
+                    <button class="cta-button" style="margin-top: 10px;" onclick="window.location.href='chat.html'">Acessar Chat</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            
+            <div class="col-left">
+
+                <section class="section-card">
+                    <h2 class="section-title"><span class="number">1</span> Hub de Interação da Disciplina</h2>
+                    <p style="margin-bottom: 20px;">Use os recursos abaixo para colaborar, formar grupos e tirar dúvidas com seus colegas.</p>
+                    
+                    <div class="hub-grid">
+                        <a href="forum-topic.html" class="hub-item">
+                            <span style="font-size: 2em;">🗣️</span>
+                            <h4>Fórum de Tópicos</h4>
+                        </a>
+                        <a href="chat.html" class="hub-item">
+                            <span style="font-size: 2em;">💬</span>
+                            <h4>Chat em Tempo Real</h4>
+                        </a>
+                        <a href="online-members.html" class="hub-item">
+                            <span style="font-size: 2em;">👥</span>
+                            <h4>Ver Membros Online</h4>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <h2 class="section-title"><span class="number">2</span> Últimas Mensagens no Chat</h2>
+                    <div style="max-height: 200px; overflow-y: auto;">
+                        <ul class="forum-list">
+                            <li>**[Colega B]**: Alguém viu o novo tutorial sobre Figma?</li>
+                            <li>**[Você]**: Postei o link na Biblioteca Colaborativa.</li>
+                            <li><a href="forum-topic.html">**[Colega C]**: Dúvida sobre o conceito de User Flow no Módulo 2.</a></li>
+                            <li>**[Prof. Ana]**: Por favor, usem o Fórum para dúvidas oficiais.</li>
+                            <li>**[Colega A]**: Queria formar um grupo para o projeto final!</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+            
+            <div class="col-right">
+                
+                <section class="section-card">
+                    <h2 class="section-title"><span class="number">3</span> Fórum - Destaques</h2>
+                    <ul class="forum-list">
+                        <li><a href="forum-topic.html">Dúvida: Diferença entre UCD e HCD?</a></li>
+                        <li><a href="#">Sugestões de Ferramentas de Prototipagem</a></li>
+                        <li><a href="#">Organização de grupo para Projeto 1</a></li>
+                        <li><a href="#">Recursos gratuitos para testes de usabilidade</a></li>
+                    </ul>
+                </section>
+                
+                <section class="section-card">
+                    <h2 class="section-title"><span class="number">4</span> Biblioteca Colaborativa</h2>
+                    <p>Material extra compartilhado por colegas e professores.</p>
+                    <button class="cta-button" style="margin-top: 15px;">Acessar Biblioteca</button>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat em Tempo Real - UX/UI Design</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/chat-style.css"> 
+</head>
+<body>
+
+    <div class="chat-wrapper">
+        <header class="chat-header">
+            <a href="index.html" class="back-link">← Voltar ao Hub</a>
+            <h1>Chat em Tempo Real: Introdução a UX/UI Design</h1>
+            <div class="user-status">
+                <span class="online-indicator"></span> 5 Membros Online
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <aside class="chat-sidebar">
+                <h2>Salas & Usuários</h2>
+                <ul class="room-list">
+                    <li class="active-room">Geral (5)</li>
+                    <li>Grupos (2)</li>
+                    <li>Professores (1)</li>
+                </ul>
+                <div class="user-list">
+                    <h3>Online Agora</h3>
+                    <div class="online-user">
+                        <img src="https://i.pravatar.cc/150?img=68" class="chat-avatar">
+                        <span>João (Você)</span>
+                    </div>
+                    <div class="online-user">
+                        <img src="https://i.pravatar.cc/150?img=35" class="chat-avatar">
+                        <span>Maria S.</span>
+                    </div>
+                    <div class="online-user">
+                        <img src="https://i.pravatar.cc/150?img=12" class="chat-avatar" style="border: 2px solid var(--secondary-color);">
+                        <span>Prof. Ana (Admin)</span>
+                    </div>
+                    </div>
+            </aside>
+
+            <main class="chat-main">
+                <div class="messages-area">
+                    <div class="message received official">
+                        <img src="https://i.pravatar.cc/150?img=12" class="chat-avatar">
+                        <div class="message-content">
+                            <span class="message-sender">Prof. Ana</span>
+                            <p>Bom dia, turma! Lembrem-se que o chat é para dúvidas rápidas e organização de grupos. Dúvidas conceituais, por favor, usem o fórum.</p>
+                            <span class="message-time">10:05 AM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="message received">
+                        <img src="https://i.pravatar.cc/150?img=35" class="chat-avatar">
+                        <div class="message-content">
+                            <span class="message-sender">Maria S.</span>
+                            <p>Alguém quer formar um grupo para o trabalho de Prototipação? Eu sou boa em Figma! 😄</p>
+                            <span class="message-time">10:15 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message sent">
+                        <div class="message-content">
+                            <p>Opa, Maria! Eu topo! Te chamo no privado para organizar.</p>
+                            <span class="message-time">10:18 AM</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="input-area">
+                    <input type="text" placeholder="Digite sua mensagem aqui...">
+                    <button class="cta-button send-button">Enviar</button>
+                </div>
+            </main>
+        </div>
+
+    </div>
+</body>
+</html>
